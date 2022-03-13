@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "aktions",
+  "info": {
+    "singularName": "aktion",
+    "pluralName": "aktions",
+    "displayName": "Aktion"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "entities": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::entitaet.entitaet",
+      "mappedBy": "actions"
+    }
+  }
+}

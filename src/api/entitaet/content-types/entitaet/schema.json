@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "entitaets",
+  "info": {
+    "singularName": "entitaet",
+    "pluralName": "entitaets",
+    "displayName": "Entität",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "actions": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::aktion.aktion",
+      "inversedBy": "entities"
+    },
+    "content": {
+      "type": "richtext"
+    }
+  }
+}

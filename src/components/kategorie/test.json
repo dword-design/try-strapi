@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_kategorie_tests",
+  "info": {
+    "displayName": "Test",
+    "icon": "allergies"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}
